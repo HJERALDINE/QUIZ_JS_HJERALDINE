@@ -41,7 +41,7 @@ function obtenerImporteConImpuestos() {
     }
 
     else if (producto == 3) {
-        document.write ( "Valor con iva " + ((precio_sin * 0.03) + precio_sin));
+        document.write ( "Valor con iva " + ((precio_sin * 0.05) + precio_sin));
     }
 }
 
