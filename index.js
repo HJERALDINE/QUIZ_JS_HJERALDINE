@@ -20,5 +20,34 @@ switch (tipo_motor) {
         document.write ("4. La bomba es una bomba de pasta alimenticia");
         break;
     default:
-        document.write ("5. No existe un valor válido para tipo de bomba");
+        document.write ("5. No existe un valor válido para tipo de bomba  ");
     }
+
+/*Ejercicio No. 02*/
+
+function obtenerImporteConImpuestos() {
+    let producto = prompt ("Ingrese el tipo del producto");
+    let precio_sin = prompt ("Ingrese valor sin iva") ;
+
+    producto = parseInt (producto)
+    precio_sin = parseInt (precio_sin)
+
+    if (producto == 1) { 
+        document.write ( "Valor con iva " + ((precio_sin * 0.21) + precio_sin));
+    }
+
+    else if (producto == 2) {
+        document.write ( "Valor con iva " + ((precio_sin * 0.10) + precio_sin));
+    }
+
+    else if (producto == 3) {
+        document.write ( "Valor con iva " + ((precio_sin * 0.03) + precio_sin));
+    }
+}
+
+obtenerImporteConImpuestos();
+    
+    
+
+
+
